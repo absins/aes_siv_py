@@ -1,0 +1,17 @@
+[package]
+name = "aes_siv_py"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "aes_siv_py"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.18", features = ["extension-module"] }
+aes-siv = "0.7"
+base64 = "0.21"
+hex = "0.4"
+
+[build-dependencies]
+maturin = "0.13"
